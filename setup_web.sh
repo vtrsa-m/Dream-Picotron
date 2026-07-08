@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Setup - Versão Web (Navegador)
-
-echo "=== Configurando Ambiente: Versão Web ==="
+echo "=== Configurando Ambiente ==="
 
 if ! command -v python3 &> /dev/null; then
     echo "Dependência ausente: Python3 não encontrado."
@@ -28,9 +26,7 @@ else
     echo "Por favor, abra o seu navegador e acesse: http://localhost:$PORTA/$ARQUIVO_JOGO"
 fi
 
-echo "=========================================="
 echo "O jogo está a rodar! Pressione [CTRL+C] para encerrar o servidor local."
-echo "=========================================="
 
 trap "echo 'A fechar o servidor...'; kill $PID_SERVER; exit" INT TERM
 wait

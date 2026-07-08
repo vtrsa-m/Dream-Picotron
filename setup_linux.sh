@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Setup - Versão Nativa (Executável Linux)
 
-echo "=== Configurando Ambiente: Versão Nativa Linux ==="
+echo "=== Configurando Ambiente ==="
 
 BINARIO="./linux/dream" 
 
